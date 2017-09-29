@@ -18,3 +18,12 @@ Route::get('/', function () {
 
 Route::resource('system-managemnt/country','CountryController');
 Route::post('system-managemnt/country/search','CountryController@search')->name('country.search');
+
+
+Route::resource('management/employee','EmployeeController');
+Route::post('management/employee/search','EmployeeController@search')->name('employee.search');
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

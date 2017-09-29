@@ -55,12 +55,23 @@
               </li>
               <!-- Menu Footer-->
               <li class="user-footer">
+
+                @if(Auth::guest())
+                <div class="pull-left">
+                  <a href="{{ route('login') }}" class="btn btn-default btn-flat">Login</a>
+                </div>
+
+                @else
+
                 <div class="pull-left">
                   <a href="#" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                <a href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit()" class="btn btn-default btn-flat">Sign out</a>
                 </div>
+                
+                @endif
+                
               </li>
             </ul>
           </li>
@@ -72,3 +83,8 @@
       </div>
     </nav>
   </header>
+
+  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none">
+    
+    {{ csrf_field() }}
+  </form>

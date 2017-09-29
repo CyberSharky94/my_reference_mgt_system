@@ -32,7 +32,7 @@
         <li class="header">HEADER</li>
         <!-- Optionally, you can add icons to the links -->
         <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Dashboard</span></a></li>
-        <li><a href="#"><i class="fa fa-link"></i> <span>Employee Management</span></a></li>
+        <li><a href="{{ url('management/employee')}}"><i class="fa fa-link"></i> <span>Employee Management</span></a></li>
         <li class="treeview">
           <a href="#"><i class="fa fa-link"></i> <span>System Management</span>
             <span class="pull-right-container">

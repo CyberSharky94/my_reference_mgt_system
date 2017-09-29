@@ -27,6 +27,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
    <!-- DataTables -->
   <link rel="stylesheet" href="{{ asset('bower_components/AdminLTE/plugins/datatables/dataTables.bootstrap.css') }}">
 
+   <!-- Date Picker -->
+  <link rel="stylesheet" href="{{ asset('bower_components/AdminLTE/plugins/datepicker/datepicker3.css') }}">
+
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -158,9 +161,27 @@ desired effect
 <!-- AdminLTE App -->
 <script src="{{ asset('bower_components/AdminLTE/dist/js/app.min.js')}}"></script>
 
+<!-- datepicker -->
+<script src="{{ asset('bower_components/AdminLTE/plugins/datepicker/bootstrap-datepicker.js')}} "></script>
+
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the
      user experience. Slimscroll is required when using the
      fixed layout. -->
+
+     <script>
+      //Date picker
+    $('#birthDate').datepicker({
+      autoclose: true,
+      format: 'dd/mm/yyyy'
+    });
+
+
+      $('#dateHired').datepicker({
+      autoclose: true,
+      format: 'dd/mm/yyyy'
+    });
+     </script>
+
 </body>
 </html>
