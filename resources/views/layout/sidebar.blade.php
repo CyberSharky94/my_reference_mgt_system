@@ -44,6 +44,7 @@
             <li><a href="#">Link in level 2</a></li>
           </ul>
         </li>
+         <li><a href="{{ url('system-management/report')}}"><i class="fa fa-link"></i> <span>Report</span></a></li>
       </ul>
       <!-- /.sidebar-menu -->
     </section>

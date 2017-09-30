@@ -23,7 +23,9 @@ Route::post('system-managemnt/country/search','CountryController@search')->name(
 Route::resource('management/employee','EmployeeController');
 Route::post('management/employee/search','EmployeeController@search')->name('employee.search');
 
+Route::get('system-management/report', 'ReportController@index');
+Route::post('system-management/report/search', 'ReportController@search')->name('report.search');
+Route::post('system-management/report/pdf', 'ReportController@exportPDF')->name('report.pdf');
+Route::post('system-management/report/excel', 'ReportController@exportExcel')->name('report.excel');
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');

@@ -181,6 +181,17 @@ desired effect
       autoclose: true,
       format: 'dd/mm/yyyy'
     });
+
+       $('#from').datepicker({
+      autoclose: true,
+      format: 'dd/mm/yyyy'
+    });
+
+
+      $('#to').datepicker({
+      autoclose: true,
+      format: 'dd/mm/yyyy'
+    });
      </script>
 
 </body>
