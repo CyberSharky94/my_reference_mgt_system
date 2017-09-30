@@ -1,0 +1,11 @@
+After download or clone this project follow this step to setup this project:
+1.create file .env
+2.copy structure .env.example and paste to .env file
+3.setup the config database and email(if want to test email) in .env file.
+4.create database name(must same name in that you write in .env file) in phpmyadmin or mysql.
+5.open terminal and change directory to this project folder
+6.type this command "composer update" in your terminal
+7. type this command "php artisan key:generate" in your terminal.
+8. type this command "php artisan migrate" in your terminal.
+9. After follow the 1-8 step can run the system . Enjoy!!!
+
